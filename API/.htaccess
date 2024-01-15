@@ -1,0 +1,8 @@
+# Check if the requested URI does not start with '/route.php'
+RewriteCond %{REQUEST_URI} !^/route.php
+
+# RewriteRule for '/route.php/login'
+RewriteRule ^route.php/login$ route.php/login [NC,L]
+
+# RewriteRule for '/route.php/registration'
+RewriteRule ^route.php/registration$ route.php/registration [NC,L]
